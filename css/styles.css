@@ -632,18 +632,13 @@ a {
 }
 
 /** ----Form---- */
-.form-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
 .form {
     display: flex;
     flex-direction: column;
 }
 
 .form-title {
+    display: block;
     color: var(--dark);
     text-align: center;
     font-family: Roboto;
@@ -653,7 +648,7 @@ a {
     letter-spacing: 0.02em;
     margin-top: 32px;
     margin-bottom: 16px;
-    display: block;
+
 }
 
 .form-label {
@@ -666,12 +661,6 @@ a {
     letter-spacing: 0.04;
     margin-bottom: 8px;
 }
-
-.form-input {}
-
-.form-textarea {}
-
-.terms-link {}
 
 .form-btn {
     color: var(--white-background);
@@ -705,6 +694,10 @@ a {
     letter-spacing: 0.04em;
     margin-bottom: 24px;
 }
+
+.form-input {}
+
+.form-textarea {}
 
 .terms-link {
     color: var(--primary-brand);
