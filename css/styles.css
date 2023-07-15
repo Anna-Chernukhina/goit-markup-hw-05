@@ -584,6 +584,9 @@ a {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-btn {
@@ -596,6 +599,7 @@ a {
     right: 24px;
     background-color: var(--accent-color);
     margin-left: auto;
+    margin-bottom: 24px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -625,6 +629,90 @@ a {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+}
+
+/** ----Form---- */
+.form-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    color: var(--dark);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    color: var(--subtle-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04;
+    margin-bottom: 8px;
+}
+
+.form-input {}
+
+.form-textarea {}
+
+.terms-link {}
+
+.form-btn {
+    color: var(--white-background);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    background-color: var(--primary-brand);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background-color: var(--pressed-state);
+}
+
+.form-label-terms {
+    color: var(--subtle-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+}
+
+.terms-link {
+    color: var(--primary-brand);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
 }
 
 /** ----Portfolio.html---- */
