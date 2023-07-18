@@ -392,15 +392,13 @@
                 </ul>
             </div>
             <div class="footer-right">
-                <form action="" class="footer-form">
-
-                    <div class="footer-input-wrap">
-                        <label for="footer-subscribe-input" class="footer-form-label">
-                            Subscribe
-                        </label>
+                <p class="footer-form-title">Subscribe</p>
+                <form class="footer-form">
+                    <label class="footer-form-label">
                         <input id="footer-subscribe-input" name="subscribe-user-mail" type="email"
                             class="footer-form-input" placeholder="E-mail">
-                    </div>
+                    </label>
+
                     <button class="footer-subscribe-btn" type="submit">
                         Subscribe
                         <svg width="24" height="24" class="footer-btn-icon">
@@ -408,12 +406,13 @@
                         </svg>
                     </button>
                 </form>
+
             </div>
         </div>
     </footer>
 
     <!-- Modal Pop-Up -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
 
             <button data-modal-close class="modal-btn" type="button">
