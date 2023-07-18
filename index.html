@@ -425,9 +425,9 @@
             <form class="form" name="order-form" autocomplete="off">
 
                 <div class="form-field-wrap">
-                    <label class="form-label" for="popup-name">Name</label>
+                    <label class="form-label" for="user-name">Name</label>
                     <div class="input-wrap">
-                        <input id="popup-name" type="text" class="form-input" name="user-name" required maxlength="10"
+                        <input id="user-name" type="text" class="form-input" name="user-name" required maxlength="10"
                             minlength="3">
                         <svg width="18" height="24" class="form-input-icon">
                             <use href="./images/icons.svg#icon-person-black"></use>
@@ -455,15 +455,16 @@
                     </div>
                 </div>
 
-                <div class="form-field-wrap">
+                <div class="form-textarea-wrap">
                     <label class="form-label" for="user-comment">Comment</label>
                     <textarea id="user-comment" class="form-textarea" name="user-comment" placeholder="Text input"
                         rows="6"></textarea>
                 </div>
 
                 <div class="privacy-wrap">
-                    <input class="visually-hidden input_ckeckbox" type="checkbox" name="user-privacy" id="popup-terms">
-                    <label class="form-label-terms" for="popup-terms">
+                    <input class="visually-hidden input_ckeckbox" type="checkbox" name="user-privacy" id="user-privacy"
+                        value="true">
+                    <label class="form-label-terms" for="user-privacy">
                         <span class="checkbox-svg">
                             <svg width="10" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
@@ -473,23 +474,6 @@
                         <a href="" class="terms-link">Privacy Policy</a>
                     </label>
                 </div>
-
-                <!-- 
-                <div class="privacy_wrap">
-                    <input class="visually-hidden input_ckeckbox" name="user-privacy" type="checkbox" id="user-privacy"
-                        value="true" />
-                    <label class="contacts_label" for="user-privacy">
-                        <span class="checkbox_svg">
-                            <svg class="svg" width="10" height="8">
-                                <use href="./images/icons.svg#icon-check"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the
-                        <a class="policy_text" href="#">Privacy Policy</a>
-                    </label>
-                </div> -->
-
-
 
                 <button type="submit" class="form-btn">Send</button>
             </form>
