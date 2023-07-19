@@ -800,34 +800,20 @@ a {
     letter-spacing: 0.04em;
 }
 
+
 .privacy-wrap {
     margin-bottom: 24px;
 }
 
-.checkbox-svg {
-    fill: transparent;
-    border-radius: 2px;
-    display: inline-flex;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    width: 16px;
-    height: 16px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input_ckeckbox:checked .checkbox_svg {
-    background-color: var(--pressed-state);
+.input-ckeckbox:checked+.contacts-label>.checkbox-svg {
+    background-color: #404bbf;
+    fill: var(--white-background);
     border: none;
-    fill: var(--background-cloud-color);
 }
 
-.form-label-terms {
+.contacts-label {
     display: block;
-    color: var(--subtle-text-color);
+    color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
@@ -835,12 +821,23 @@ a {
     margin-bottom: 4px;
 }
 
-.terms-link {
+.checkbox-svg {
+    fill: transparent;
+    border-radius: 2px;
+    display: inline-flex;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.policy-link-text {
     color: var(--primary-brand);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.33;
-    letter-spacing: 0.04em;
     text-decoration-line: underline;
 }
 
@@ -860,7 +857,6 @@ a {
     min-width: 169px;
     height: 56px;
     margin: 0 auto;
-    /* margin-bottom: 24px; */
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
