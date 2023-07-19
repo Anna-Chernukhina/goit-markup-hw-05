@@ -807,7 +807,7 @@ a {
 
 .input-ckeckbox:checked+.contacts-label>.checkbox-svg {
     background-color: #404bbf;
-    fill: var(--white-background);
+    fill: var(--light);
     border: none;
 }
 
